@@ -1,0 +1,317 @@
+:root {
+  --primary: #5b6dff;
+  --accent: #e9ecf8;
+  --text: #333;
+  --bg: #fff;
+  --nav-bg: var(--primary);
+  --nav-text: #fff;
+}
+
+body.dark {
+  --primary: #8894ff;
+  --accent: #1c1e2a;
+  --text: #eee;
+  --bg: #121212;
+  --nav-bg: #1f1f2e;
+  --nav-text: #eee;
+}
+
+
+/* ===== NAVBAR ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--nav-bg);
+  color: var(--nav-text);
+  padding: 0.8rem 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+/* Logo */
+.logo {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--nav-text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: blue;
+}
+
+/* Dark Mode and Menu Controls */
+.nav-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+  background: var(--accent);
+  border: none;
+  color: var(--nav-text);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Hamburger Menu Button */
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: var(--nav-text);
+  cursor: pointer;
+  display: none; /* hidden on desktop */
+}
+
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--primary);
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+
+
+/* === SMOOTH SCROLL BEHAVIOR === */
+html {
+  scroll-behavior: smooth;
+}
+
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: var(--text);
+    background: var(--bg);
+    transition: background 0.3s, color 0.3s;
+  }
+
+ 
+
+  
+  /* HERO */
+  #hero {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: var(--primary);
+    color: white;
+  }
+  
+  #hero img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+  }
+  
+  #hero h1 {
+    margin: 1rem 0 0;
+    font-size: 2rem;
+  }
+  
+  #hero h2 {
+    font-weight: 400;
+    margin-top: 0.25rem;
+  }
+  
+  /* LAYOUT */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  #sidebar {
+    flex: 1 1 260px;
+  }
+  
+  section {
+    background: var(--accent);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  #experience, #education, #projects, #skills, #courses {
+    flex: 3 1 600px;
+  }
+  
+  /* SECTION TITLES */
+  section h3 {
+    margin-top: 0;
+    color: var(--primary);
+  }
+  
+  /* EXPERIENCE */
+  .job {
+    margin-bottom: 1.5rem;
+  }
+  
+  .job h4 {
+    margin: 0.2rem 0;
+  }
+  
+  .job ul {
+    padding-left: 1.5rem;
+  }
+  
+  /* PROJECTS */
+  .project {
+    margin-bottom: 1.5rem;
+  }
+  
+  .project img {
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  
+  
+  .tags span {
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    margin: 0.2rem;
+    display: inline-block;
+  }
+  
+  /* SKILLS */
+  #skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  #skills li {
+    background: var(--primary);
+    color: white;
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+  
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background: var(--primary);
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+    }
+  }
+  
+  /* ===== PRINT MODE ===== */
+@media print {
+  /* Hide navigation, footer, and background colors */
+  nav,
+  .navbar,
+  .menu-toggle,
+  .theme-toggle,
+  .print-btn,
+  footer {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+    font-size: 12pt;
+    margin: 1cm;
+  }
+
+  section {
+    background: none;
+    box-shadow: none;
+    color: black;
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100px;
+    height: auto;
+  }
+
+  /* Make layout single column */
+  main {
+    display: block;
+  }
+
+  #sidebar {
+    width: 100%;
+  }
+
+  /* Ensure links print as plain text (with URL visible) */
+  a::after {
+    content: " (" attr(href) ")";
+    font-size: 10pt;
+    color: gray;
+  }
+}
+
+/* ===== PRINT BUTTON STYLE ===== */
+.print-btn {
+  background: var(--accent);
+  border: none;
+  color: var(--nav-text);
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.print-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

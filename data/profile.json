@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "schemaVersion": "1.0.0",
+    "generatedAt": "2025-09-17"
+  },
+  "profile": {
+    "name": "Ilori Enoch Oluwatosin",
+    "role": "Frontend Developer",
+    "photo": {
+      "src": "assets/profile.jpg",
+      "alt": ""
+    },
+    "summary": "I specialize in translating design concepts into functional, interactive experiences using HTML, CSS, JavaScript, and modern frameworks like React or Vue.js."
+  },
+  "personalDetails": {
+    "email": "tosinilori68@gmail.com",
+    "phone": "07010386434",
+    "address": "Sango, Ibadan, Oyo State, Nigeria"
+  },
+  "socials": [
+    { "platform": "Instagram",  "url": "https://www.instagram.com/enochofgod_/", "icon": "assets/icons/instagram.svg" },
+    { "platform": "Facebook",   "url": "https://web.facebook.com/Tosien4/", "icon": "assets/icons/facebook.svg" },
+    { "platform": "Twitter",    "url": "https://x.com/enochofGod", "icon": "assets/icons/twitter.svg" }
+  ],
+  "languages": [
+    { "name": "English", "proficiency": "Professional working" },
+    { "name": "Yorùbá", "proficiency": "Native" }
+  ],
+  "hobbies": [
+    "Sketching",
+    "Football",
+    "Photography",
+    "Casual basketball"
+  ],
+  "experience": [
+    {
+      "company": "Apple",
+      "role": "Product Designer",
+      "location": "Cupertino, USA (remote from Lagos)",
+      "startDate": "2021-07",
+      "endDate": "2022-01",
+      "logo": "assets/logos/apple.svg",
+      "highlights": [
+        "Led UI audits and component refactors across two internal tools.",
+        "Designed micro-interactions improving task completion by ~18%."
+      ],
+      "summary": "Worked on design systems and product flows in a cross-functional team."
+    },
+    {
+      "company": "Microsoft",
+      "role": "UX Designer",
+      "location": "San Diego, USA",
+      "startDate": "2020-07",
+      "endDate": "2020-12",
+      "logo": "assets/logos/microsoft.svg",
+      "highlights": [
+        "Mapped end-to-end user journeys for a mobile companion app.",
+        "Partnered with engineers to ship an accessible color palette."
+      ],
+      "summary": "Rapid prototyping and user testing for a pilot feature set."
+    },
+    {
+      "company": "Interswitch",
+      "role": "Sales Representative",
+      "location": "Lagos, Nigeria",
+      "startDate": "2019-12",
+      "endDate": "2020-05",
+      "logo": "assets/logos/interswitch.svg",
+      "highlights": [
+        "Collaborated with merchants to improve checkout UX.",
+        "Collected feedback that informed later design work."
+      ],
+      "summary": "Customer-facing role that built empathy for user pain points."
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Ibadan",
+      "location": "Ibadan, Nigeria",
+      "degree": "B.Sc. — Computer Science",
+      "startDate": "2013",
+      "endDate": "2016",
+      "logo": "assets/logos/uniibadan.svg"
+    },
+    {
+      "institution": "University of Lagos",
+      "location": "Lagos, Nigeria",
+      "degree": "B.Sc. — Business & IT",
+      "startDate": "2016",
+      "endDate": "2019",
+      "logo": "assets/logos/unilag.svg"
+    },
+    {
+      "institution": "Berkeley High School",
+      "location": "Berkeley, California",
+      "degree": "High School Diploma",
+      "startDate": "2012",
+      "endDate": "2016",
+      "logo": "assets/logos/berkeleyhs.svg"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bible Quiz",
+      "coverImage": { "src": "assets/projects/bible.png", "alt": "screenshot of the bible quiz interface" },
+      "summary": "The use of JavaScript DOM manipulation for dynamic question and answer display",
+      "tags": ["HTML", "CSS", "JavaScript"],
+      "links": [
+        { "label": "Read More", "url": "BIBLE QUIZ" }
+      ]
+    },
+    
+    {
+      "title": "TIC TAC TOE Game",
+      "coverImage": { "src": "assets/projects/tictactoe.jpg", "alt": "screenshot of the TIC TAC TOE interface" },
+      "summary": "The use of 1event listeners and dynamic content updates to create a fully interactive user interface with JavaScript-driven functionality",
+      "tags": ["JavaScript", "JSON", "HTML", "CSS"],
+      "links": [
+        { "label": "Read More", "url": "TIC TAC TOE" }
+      ]
+    }
+  ],
+  "skills": [
+    "User Experience",
+    "Graphic Design",
+    "Adobe Illustrator",
+    "Adobe After Effects",
+    "Web Development",
+    "Mobile Apps",
+    "React.js",
+    "React Native"
+  ],
+  "courses": [
+    {
+      "title": "Intro to Graphic Design",
+      "provider": "Savua Education Center",
+      "startDate": "2021-10",
+      "endDate": "2022-12",
+      "certificateUrl": "https://example.com/certificates/graphic-design"
+    },
+    {
+      "title": "Responsive Web Design",
+      "provider": "freeCodeCamp",
+      "startDate": "2021-10",
+      "endDate": "2021-10",
+      "certificateUrl": "https://www.freecodecamp.org/certification/sample/responsive-web-design"
+    },
+    {
+      "title": "React: From Zero to Hero!",
+      "provider": "Udemy",
+      "startDate": "2020-05",
+      "endDate": "2020-05",
+      "certificateUrl": "https://udemy.com/certificate/sample-react"
+    }
+  ],
+  "settings": {
+    "primaryColor": "#5B6DFF",
+    "accentColor": "#E9ECF8",
+    "enableDarkMode": true,
+    "dateFormat": "MMM yyyy"
+  }
+}
